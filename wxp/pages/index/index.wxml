@@ -1,0 +1,46 @@
+<view id="main">
+
+  <view class='top'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" class="pic">
+        <swiper-item>
+          <image src="{{item}}" width="100%" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <view class='text_ui'>
+    <text>蘑菇天文馆，输入你的命令以执行。。。。\n</text>
+  </view>
+  <view id="cmd2">
+    <text class='cmd'>{{text}}{{inputValue}}</text>
+    <input bindinput='add' type='text' class='text' placeholder='press here to input'></input>
+  </view>
+
+  <view class='input_ui'>
+    <input type='text' placeholder='输入你的账号' />
+  </view>
+
+
+  <view class="input_ui">
+    <input class="mima" password type="number" placeholder="输入你的密码（纯数字组成）" />
+  </view>
+
+  <navigator url='../signin/signin'>
+    <view class='button_ui'>
+      <button class='anniu'>登陆</button>
+    </view>
+  </navigator>
+
+  <navigator url='../signup/signup'>
+    <view class='button_ui'>
+    <button class='anniu'>注册</button>
+    </view>
+  </navigator>
+
+
+
+  <view class='low'></view>
+
+</view>

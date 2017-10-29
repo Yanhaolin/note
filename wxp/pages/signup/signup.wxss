@@ -1,0 +1,5 @@
+/* pages/signup/signup.wxss */
+
+text{
+  color: #fff;
+}

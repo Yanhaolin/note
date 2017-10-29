@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/signup/signup",
+    "pages/signin/signin",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"blcak",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "蘑菇天文馆",
+    "navigationBarTextStyle":"light"
+  }
+}

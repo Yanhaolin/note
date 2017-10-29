@@ -1,0 +1,70 @@
+#mima {
+  font-size: 17px;
+}
+#main {
+  background-color: black;
+  width: 100%;
+}
+
+
+
+.input_ui {
+  background: black;
+  width: 70%;
+  position: relative;
+  border-style: solid;
+  border-bottom-color: white;
+  border-width: 1px;
+  margin-left: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.button_ui {
+  width: 100%;
+  position: static;
+  background-color: black;
+}
+
+.anniu {
+  background: black;
+  color: white;
+  border: 1px;
+  border-color: white;
+  border-style: solid;
+  margin: 5px 100px 0px 100px;
+}
+
+text {
+  color: white;
+}
+
+.text {
+  width: 100%;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: white;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.cmd{
+  font-size: 15px;
+}
+
+.low {
+  background: black;
+  height: 0px;
+  width: 100%;
+}
+
+.text_ui {
+  text-align: left;
+  width: auto;
+}
+
+.cmd2 {
+  position: relative;
+}
