@@ -8,7 +8,20 @@ Page({
     motto: '使用微信登陆成功，欢迎',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    line: [{
+      name: '我发布的',
+      src: '../../img/RFQ.png',
+    },{
+      name: '我卖出的',
+      src: '../../img/dollar.png',
+    },{
+      name: '我的订单',
+      src: '../../img/cart.png'
+    },{
+      name: '关于二手书店',
+      src: '../../img/ViewGallery.png'
+    }]
   },
   //事件处理函数
   bindViewTap: function () {

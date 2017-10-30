@@ -1,46 +1,89 @@
-<view id="main">
+<view class="container">
 
-  <view class='top'>
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-      <block wx:for="{{imgUrls}}" class="pic">
-        <swiper-item>
-          <image src="{{item}}" width="100%" height="150" />
-        </swiper-item>
-      </block>
-    </swiper>
-  </view>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
 
-  <view class='text_ui'>
-    <text>蘑菇天文馆，输入你的命令以执行。。。。\n</text>
-  </view>
-  <view id="cmd2">
-    <text class='cmd'>{{text}}{{inputValue}}</text>
-    <input bindinput='add' type='text' class='text' placeholder='press here to input'></input>
-  </view>
-
-  <view class='input_ui'>
-    <input type='text' placeholder='输入你的账号' />
-  </view>
-
-
-  <view class="input_ui">
-    <input class="mima" password type="number" placeholder="输入你的密码（纯数字组成）" />
-  </view>
-
-  <navigator url='../signin/signin'>
-    <view class='button_ui'>
-      <button class='anniu'>登陆</button>
+    <view class="icon">
+    <view class="item">
+      <view>
+        <navigator url="../logs/logs" open-type="redirect">
+        <image src="../../img/1.png" style="width:50px;height:50px;"></image>
+        </navigator>
+      </view>
+      <view class="menu">二手好物</view>
     </view>
-  </navigator>
-
-  <navigator url='../signup/signup'>
-    <view class='button_ui'>
-    <button class='anniu'>注册</button>
+    <view class="item">
+      <view>
+        <navigator url="../logs/logs" open-type="redirect">
+        <image src="../../img/2.png" style="width:50px;height:50px;"></image>
+        </navigator>
+      </view>
+      <view class="menu">全新交易</view>
     </view>
-  </navigator>
+    <view class="item">
+      <view>
+        <navigator url="../logs/logs" open-type="redirect">
+        <image src="../../img/3.png" style="width:50px;height:50px;"></image>
+        </navigator>
+      </view>
+      <view class="menu">新鲜上架</view>
+    </view>
+    <view class="item">
+      <view>
+        <navigator url="../logs/logs" open-type="redirect">
+        <image src="../../img/4.png" style="width:50px;height:50px;"></image>
+        </navigator>
+      </view>
+      <view class="menu">免费赠送</view>
+    </view>
+    </view>   
 
+    <view class='main'>
+      <view class='list'>
+        <view class='listleft'>
+            <view><image src='../../img/jyzhd.jpg'  class='bookimg'></image></view>
+        </view>
+        <view class='listright'>
+            <view class='booktitle'><text class='title'>解忧杂货店</text></view>
+            <view class='desc1'><text class='desc'>[日]东野圭吾/南海出版社</text></view>
+            <view class='desc desc2'><text class='desc'>“九成新未开分无笔记”</text></view>
+            <view class='money'><text class='price'>￥45.00</text> </view>
+            <view class='booksite'><text class='desc'>校本部6栋501宿舍XXX</text> </view>
+        </view>
+      </view>
 
+      <view class='list'>
+        <view class='listleft'>
+            <view><image src='../../img/ccna.jpg'  class='bookimg'></image></view>
+        </view>
+        <view class='listright'>
+            <view class='booktitle'><text class='title'>CCNA学习实验指南</text></view>
+            <view class='desc1'><text class='desc'>[美]cisco/人民邮电出版社</text></view>
+            <view class='desc desc2'><text class='desc'>“九成新未开分无笔记”</text></view>
+            <view class='money'><text class='price'>￥35.00</text> </view>
+            <view class='booksite'><text class='desc'>校本部6栋501宿舍XXX</text> </view>
+        </view>
+      </view>
 
-  <view class='low'></view>
+      <view class='list' wx:for="{{list}}" wx:if="{{true}}">
+        <view class='listleft'>
+            <view><image src='../../img/jyzhd.jpg'  class='bookimg'></image></view>
+        </view>
+        <view class='listright'>
+            <view class='booktitle'><text class='title'>{{item.title}}</text></view>
+            <view class='desc1'><text class='desc'>{{item.desc1}}</text></view>
+            <view class='desc2'><text class='desc'>{{item.desc2}}</text></view>
+            <view class='money'><text class='price'>{{item.price}}</text> </view>
+            <view class='booksite'><text class='desc'>{{item.desc}}</text> </view>
+        </view>
+      </view>
+
+    </view>
 
 </view>

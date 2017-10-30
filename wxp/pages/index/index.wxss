@@ -1,70 +1,63 @@
-#mima {
-  font-size: 17px;
-}
-#main {
-  background-color: black;
+.container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
+.slide-image{
+  width: 100%;
+  height: 150px;
+}
 
+.icon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.item{
+    width: 25%;
+    text-align: center;
+}
+.menu{
+    font-size: 11px;
 
-.input_ui {
-  background: black;
-  width: 70%;
-  position: relative;
-  border-style: solid;
-  border-bottom-color: white;
-  border-width: 1px;
-  margin-left: 15%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
   margin-top: 20px;
-  margin-bottom: 20px;
-  color: white;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px #828282;
+}
+.listleft {
+  width: 40%;
+}
+.listright {
+  width: 6a0%;
+  display: flex;
+  flex-direction: column;
+}
+.bookimg {
+  width: 100px;
+  height: 150px;
 }
 
-.button_ui {
-  width: 100%;
-  position: static;
-  background-color: black;
-}
-
-.anniu {
-  background: black;
-  color: white;
-  border: 1px;
-  border-color: white;
-  border-style: solid;
-  margin: 5px 100px 0px 100px;
-}
-
-text {
-  color: white;
-}
-
-.text {
-  width: 100%;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: white;
-  border-style: solid;
-  border-width: 1px;
-}
-
-.cmd{
-  font-size: 15px;
-}
-
-.low {
-  background: black;
-  height: 0px;
-  width: 100%;
-}
-
-.text_ui {
+.desc {
+  color: #828282;
   text-align: left;
-  width: auto;
+  font-size: 16px;
 }
-
-.cmd2 {
-  position: relative;
+.title {
+  font-size: 24px;
+}
+.price {
+  font-size: 22px;
+  color: red;
 }

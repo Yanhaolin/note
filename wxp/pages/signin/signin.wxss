@@ -1,8 +1,13 @@
 /* pages/signin/signin.wxss */
+page {
+  background-color: #0099ff;
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px; 
 }
 
 .userinfo-avatar {
@@ -16,7 +21,41 @@
   color: #fff;
 }
 
-.usermotto {
-  margin-top: 100px;
-  color: #fff;
+.container {
+  background: #0099ff;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  width: 85%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px 10px 10px 20px;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.more {
+ width:30px;
+ height:30px;
+ align-self: flex-end;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.linetxt{
+  padding-top: 3px;
+}
+
+.lineleft {
+}
+
+.lineright {
+
 }

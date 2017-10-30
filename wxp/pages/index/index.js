@@ -1,57 +1,52 @@
-//index.js
-//获取应用实例
-const app = getApp()
-var initData = 'localhost login: guest\nPassword:_\n[guest@qianmiao ~]$'
-var extraLine = [];
 Page({
   data: {
-    text: initData,
     imgUrls: [
-      'http://www.gdinit.cn/uploads/allimg/banner_1_2.png',
-      'http://www.gdinit.cn/uploads/allimg/banner_2_2.png',
-      'http://www.gdinit.cn/uploads/allimg/banner_3_2.png'
+      '../../img/top1.png',
+      '../../img/top2.png',
+      '../../img/top3.png',
     ],
-    indicatorDots: false,
+    indicatorDots: true,
     autoplay: true,
     interval: 5000,
     duration: 1000,
+    list:[{
+      title: '红楼梦',
+      desc1: '[中]曹雪芹/长春出版社',
+      desc2: '八成新，可能有点老旧',
+      desc: '白云校区A2-318XXX',
+      price: '￥35.00'
+    },{
+        title: '红楼梦',
+        desc1: '[中]曹雪芹/长春出版社',
+        desc2: '全新',
+        desc: '白云校区A2-318XXX',
+        price: '￥75.00'
+    },{
+        title: '红楼梦',
+        desc1: '[中]曹雪芹/长春出版社',
+        desc2: '九成新，有少许笔记',
+        desc: '白云校区A2-318XXX',
+        price: '￥65.00'
+    }]
   },
-  add: function (e) {
+  changeIndicatorDots: function (e) {
     this.setData({
-      inputValue: e.detail.value
+      indicatorDots: !this.data.indicatorDots
     })
-    var a = e.detail.value 
-    if (a == 'cd')
-    {
-      extraLine.push('[guest@qianmiao ~]$')
-      this.setData({
-        text: initData + '\n' + extraLine.join('\n')
-      })
-    }
-    if(a == 'clear'){
-      if (extraLine.length > 0) {
-        extraLine.pop()
-        this.setData({
-          text: initData + '\n' 
-        })
-      }
-    }
-    if(a == 'help'){
-      extraLine.push("[cd] --add one line in console\n[help] --show this help  page\n[clear] --delete one line in console\n[guest@qianmiao ~]$")
-      this.setData({
-        text: initData + '\n' + extraLine.join('\n')
-      })
-    }
-    if (a == 'shutdown') {
-      if (extraLine.length > 0) {
-        extraLine.pop()
-        this.setData({
-          text: 'bye bye!\n'
-        })
-      }
-    }
   },
+  changeAutoplay: function (e) {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
+  },
+  intervalChange: function (e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+  durationChange: function (e) {
+    this.setData({
+      duration: e.detail.value
+    })
+  }
 })
-
-
-
