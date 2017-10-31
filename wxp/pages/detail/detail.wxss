@@ -1,34 +1,4 @@
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.slide-image{
-  width: 100%;
-  height: 150px;
-}
-
-.icon{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-}
-.item{
-    width: 25%;
-    text-align: center;
-}
-.menu{
-    font-size: 11px;
-
-}
-.main {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 90%;
-  margin-top: 20px;
-}
+/* pages/detail/detail.wxss */
 .list {
   display: flex;
   flex-direction: row;

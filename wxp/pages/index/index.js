@@ -10,6 +10,12 @@ Page({
     interval: 5000,
     duration: 1000,
     list:[{
+        title: '解忧杂货店',
+        desc1: '[日]东野圭吾/南海出版社',
+        desc2: '九成新未开无笔记',
+        desc: '校本部6栋501宿舍XXX',
+        price: '￥45.00'
+      },{
       title: '红楼梦',
       desc1: '[中]曹雪芹/长春出版社',
       desc2: '八成新，可能有点老旧',

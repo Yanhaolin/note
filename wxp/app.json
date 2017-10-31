@@ -1,35 +1,37 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/signup/signup",
     "pages/signin/signin",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detail/detail"
   ],
-  "window":{
-    "backgroundTextStyle":"blcak",
+  "window": {
+    "backgroundTextStyle": "blcak",
     "navigationBarBackgroundColor": "#0099FF",
     "navigationBarTitleText": "广师二手书店",
-    "navigationBarTextStyle":"light"
+    "navigationBarTextStyle": "light"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "商场首页",
-      "iconPath": "img/图书.png",
-      "selectedIconPath": "img/图书.png"
-    },
-    {
-      "pagePath": "pages/signin/signin",
-      "text": "聊天室",
-      "iconPath": "img/社交.png",
-      "selectedIconPath": "img/社交.png"
-    },
-    {
-      "pagePath": "pages/signin/signin",
-      "text": "我的信息",
-      "iconPath": "img/记录.png",
-      "selectedIconPath": "img/记录.png"
-    }
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "商场首页",
+        "iconPath": "img/图书.png",
+        "selectedIconPath": "img/图书.png"
+      },
+      {
+        "pagePath": "pages/signin/signin",
+        "text": "聊天室",
+        "iconPath": "img/社交.png",
+        "selectedIconPath": "img/社交.png"
+      },
+      {
+        "pagePath": "pages/signin/signin",
+        "text": "我的信息",
+        "iconPath": "img/记录.png",
+        "selectedIconPath": "img/记录.png"
+      }
     ]
   }
 }

@@ -1,0 +1,16 @@
+<!--pages/detail/detail.wxml-->
+<view class='list' wx:for="{{list}}" wx:if="{{true}}">
+        <view class='listleft'>
+            <view><image src='../../img/jyzhd.jpg'  class='bookimg'></image></view>
+        </view>
+        <view class='listright'>
+            <view class='booktitle'><text class='title'>{{item.title}}</text></view>
+            <view class='desc1'><text class='desc'>{{item.desc1}}</text></view>
+            <view class='desc2'><text class='desc'>{{item.desc2}}</text></view>
+            <view class='money'><text class='price'>{{item.price}}</text> </view>
+            <view class='booksite'><text class='desc'>{{item.desc}}</text> </view>
+        </view>
+</view>
+<view class='hr' wx:for="{{hr}}">
+  <text>{{item.txt}}</text>
+</view>

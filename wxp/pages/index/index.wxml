@@ -47,19 +47,6 @@
     <view class='main'>
       <view class='list'>
         <view class='listleft'>
-            <view><image src='../../img/jyzhd.jpg'  class='bookimg'></image></view>
-        </view>
-        <view class='listright'>
-            <view class='booktitle'><text class='title'>解忧杂货店</text></view>
-            <view class='desc1'><text class='desc'>[日]东野圭吾/南海出版社</text></view>
-            <view class='desc desc2'><text class='desc'>“九成新未开分无笔记”</text></view>
-            <view class='money'><text class='price'>￥45.00</text> </view>
-            <view class='booksite'><text class='desc'>校本部6栋501宿舍XXX</text> </view>
-        </view>
-      </view>
-
-      <view class='list'>
-        <view class='listleft'>
             <view><image src='../../img/ccna.jpg'  class='bookimg'></image></view>
         </view>
         <view class='listright'>
@@ -71,9 +58,12 @@
         </view>
       </view>
 
+
       <view class='list' wx:for="{{list}}" wx:if="{{true}}">
         <view class='listleft'>
+            <navigator url='../detail/detail'>
             <view><image src='../../img/jyzhd.jpg'  class='bookimg'></image></view>
+            </navigator>
         </view>
         <view class='listright'>
             <view class='booktitle'><text class='title'>{{item.title}}</text></view>
