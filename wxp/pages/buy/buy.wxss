@@ -1,0 +1,15 @@
+/* pages/buy/buy.wxss */
+@import '../detail/detail.wxss';
+.cell__bd {
+  background: green;
+}
+
+.titleone {
+ color: #000;
+ font-size: 24px;
+}
+
+.title {
+  color: #bbb;
+  font-size: 16px;
+}

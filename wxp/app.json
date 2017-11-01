@@ -4,7 +4,11 @@
     "pages/signup/signup",
     "pages/signin/signin",
     "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/buy/buy",
+    "pages/about/about",
+    "pages/mysell/mysell",
+    "pages/mybuy/mybuy"
   ],
   "window": {
     "backgroundTextStyle": "blcak",

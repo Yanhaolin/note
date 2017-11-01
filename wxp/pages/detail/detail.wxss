@@ -1,10 +1,28 @@
 /* pages/detail/detail.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; 
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #fff;
+}
+
 .list {
   display: flex;
   flex-direction: row;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: solid 1px #828282;
+  background-color: #fff;
 }
 .listleft {
   width: 40%;
@@ -30,4 +48,42 @@
 .price {
   font-size: 22px;
   color: red;
+}
+
+.hr {
+  background-color: #fff;
+  border-bottom: solid 1px #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner {
+  height: 40px;
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+.contant {
+  background-color: #fff;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.mainline {
+  background-color: #eee;
+  padding-top: 5px;
+}
+.purche {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+}
+button{
+  width: 50%;
 }

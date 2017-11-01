@@ -5,7 +5,6 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '使用微信登陆成功，欢迎',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),

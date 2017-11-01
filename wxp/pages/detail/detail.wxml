@@ -11,6 +11,39 @@
             <view class='booksite'><text class='desc'>{{item.desc}}</text> </view>
         </view>
 </view>
-<view class='hr' wx:for="{{hr}}">
-  <text>{{item.txt}}</text>
+
+
+
+<view class='mainline' wx:for="{{mainline}}">
+  <view class='hr'>
+    <view class='banner'><image src='../../img/line.png' class='icon'></image></view>
+    <view><text>{{item.txt}}</text></view>
+  </view>
+  <view class='contant'>
+    <text>{{item.maintxt}}</text>
+  </view>
 </view>
+
+<!--固定的买家留言动态行-->
+<view class='mainline'>
+  <view class='hr'>
+    <view class='banner'><image src='../../img/line.png' class='icon'></image></view>
+    <view><text>买家留言</text></view>
+    </view>
+  <view class='contant'>
+    <text>{{text}}</text>
+  </view>
+  <form catchsubmit="formSubmit">
+<input class="weui-input" name="input" placeholder="这是一个输入框" />
+
+<view class='purche'>
+  <button type='default' bindtap='liuyan' formType="submit" open-type='getUserInfo' bindgetuserinfo='getinfo'>我要留言</button>
+  <button type='primary' bindtap='buy'>我要下单</button>
+</view>
+
+</form>
+</view>
+
+
+
+
