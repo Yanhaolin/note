@@ -1,10 +1,10 @@
 // pages/buy/buy.js
-
 Page({
   /**
    * 页面的初始数据
    */
   data: {
+    showView: true,
     array: ['本部图书馆', '白云图书馆', '西校区图书馆', '北校区图书馆'],
     index: 0,
     date: '2017-11-01',
@@ -33,12 +33,24 @@ Page({
       time: e.detail.value
     })
   },
+  netpay: function(){
+    var that = this;
+    that.setData({
+      showView: (that.data.showView = true)
+    })
+  },
+  cash: function(){
+    var that = this;
+    that.setData({
+      showView: (that.data.showView = false)
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    showView: (options.showView == "true" ? true : false)
   },
 
   /**
