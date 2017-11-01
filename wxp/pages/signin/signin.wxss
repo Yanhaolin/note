@@ -31,10 +31,10 @@ page {
 .line {
   width: 85%;
   background-color: #fff;
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
   display: flex;
   flex-wrap: nowrap;
-  padding: 10px 10px 10px 20px;
-  margin-top: 10px;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -58,4 +58,12 @@ page {
 
 .lineright {
 
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
 }

@@ -8,12 +8,15 @@
     </block>
   </view>
 
+
   <view class='line' wx:for="{{line}}">
+    <navigator class='nav' url='{{item.url}}' hover-class="none">
       <view class='lineright'>
       <image src='{{item.src}}' class='icon'></image>
       </view>
       <view  class='linetxt'><text>{{item.name}}</text></view>
     <view class='lineleft'><image src='../../img/more.png' class='more'></image></view>
+    </navigator>
   </view>
-  
+
 </view>

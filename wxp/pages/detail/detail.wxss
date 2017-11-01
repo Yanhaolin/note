@@ -26,9 +26,10 @@
 }
 .listleft {
   width: 40%;
+  padding-left: 5%;
 }
 .listright {
-  width: 60%;
+  width: 55%;
   display: flex;
   flex-direction: column;
 }

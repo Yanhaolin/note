@@ -11,15 +11,19 @@ Page({
     line: [{
       name: '我发布的',
       src: '../../img/RFQ.png',
+      url: '../mysell/mysell'
     },{
       name: '我卖出的',
       src: '../../img/dollar.png',
+      url: '../mysell/mysell'
     },{
       name: '我的订单',
-      src: '../../img/cart.png'
+      src: '../../img/cart.png',
+      url: '../mybuy/mybuy'
     },{
       name: '关于二手书店',
-      src: '../../img/ViewGallery.png'
+      src: '../../img/ViewGallery.png',
+      url: '../about/about'
     }]
   },
   //事件处理函数

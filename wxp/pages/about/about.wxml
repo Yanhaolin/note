@@ -1,2 +1,5 @@
 <!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<view class='container'>
+  <image src='../../img/payforme.jpg' class='code'>微信</image>
+  <image src='../../img/paytome.jpg' class='code'>支付宝</image>
+</view>

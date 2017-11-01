@@ -12,7 +12,7 @@
     <view class="icon">
     <view class="item">
       <view>
-        <navigator url="../logs/logs" open-type="redirect">
+        <navigator url="../logs/logs" open-type="redirect" >
         <image src="../../img/1.png" style="width:50px;height:50px;"></image>
         </navigator>
       </view>
@@ -46,6 +46,7 @@
 
     <view class='main'>
       <view class='list'>
+      <navigator class='nav' url='../detail/detail' hover-class="none">
         <view class='listleft'>
             <view><image src='../../img/ccna.jpg'  class='bookimg'></image></view>
         </view>
@@ -56,14 +57,14 @@
             <view class='money'><text class='price'>￥35.00</text> </view>
             <view class='booksite'><text class='desc'>校本部6栋501宿舍XXX</text> </view>
         </view>
+        </navigator>
       </view>
 
 
       <view class='list' wx:for="{{list}}" wx:if="{{true}}">
+           <navigator class='nav' url='../detail/detail' hover-class="none">
         <view class='listleft'>
-            <navigator url='../detail/detail'>
             <view><image src='../../img/jyzhd.jpg'  class='bookimg'></image></view>
-            </navigator>
         </view>
         <view class='listright'>
             <view class='booktitle'><text class='title'>{{item.title}}</text></view>
@@ -72,8 +73,8 @@
             <view class='money'><text class='price'>{{item.price}}</text> </view>
             <view class='booksite'><text class='desc'>{{item.desc}}</text> </view>
         </view>
+        </navigator>
       </view>
-
     </view>
 
 </view>

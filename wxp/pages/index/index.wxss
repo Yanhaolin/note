@@ -30,11 +30,13 @@
   margin-top: 20px;
 }
 .list {
-  display: flex;
-  flex-direction: row;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: solid 1px #828282;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
 }
 .listleft {
   width: 40%;

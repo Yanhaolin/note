@@ -63,9 +63,11 @@
       <view class="price">￥45.00</view>
       <view class="desc">示例就没有后台服务啦，就当支付成功了吧</view>
       <view class="btn-area">
-        <button type="primary" bindtap="requestPayment" loading="{{loading}}">支付</button>
+        <button type="primary" bindtap="payforme" loading="{{loading}}">支付</button>
       </view>
     </view>
   </view>
+
+
 
 </form>

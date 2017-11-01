@@ -1,0 +1,2 @@
+<!--pages/payforme/payforme.wxml-->
+<image src='../../img/payforme.jpg' class='qcode'></image>

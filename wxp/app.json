@@ -8,7 +8,8 @@
     "pages/buy/buy",
     "pages/about/about",
     "pages/mysell/mysell",
-    "pages/mybuy/mybuy"
+    "pages/mybuy/mybuy",
+    "pages/payforme/payforme"
   ],
   "window": {
     "backgroundTextStyle": "blcak",
