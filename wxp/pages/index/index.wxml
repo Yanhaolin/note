@@ -10,7 +10,7 @@
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      <image src="{{item}}" class="slide-image" width="355"/>
     </swiper-item>
   </block>
 </swiper>
@@ -51,6 +51,10 @@
     </view>   
 
     <view class='main'>
+        <view class='hr'>
+        <view class='banner'><image src='../../img/line.png' class='shuxian'></image></view>
+        <view><text>热门书籍</text></view>
+         </view>
       <view class='list'>
       <navigator class='nav' url='../detail/detail' hover-class="none">
         <view class='listleft'>
