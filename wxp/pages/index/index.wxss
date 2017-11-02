@@ -3,6 +3,35 @@
   display: flex;
   flex-direction: column;
 }
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+}
+.searchinput {
+  width: 78%;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: #ddd;
+}
+.searchinner{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3px;
+}
+.searchimg {
+  width: 30px;
+  height: 30px;
+}
+.placeholder{
+  margin-left: 1em;
+  text-align: center;
+}
 
 .slide-image{
   width: 100%;
@@ -14,13 +43,17 @@
     flex-direction: row;
     margin-top: 20px;
 }
+.topicon{
+   width: 75px;
+   height: 75px;
+   border-radius: 50%;
+}
 .item{
     width: 25%;
     text-align: center;
 }
 .menu{
-    font-size: 11px;
-
+    font-size: 16px;
 }
 .main {
   display: flex;

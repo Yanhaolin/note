@@ -16,54 +16,62 @@
         </view>
 </view>
 
-<form>
-  <view>
+<form bindsubmit="submitForm" report-submit="true">
+  <view class='contantone'>
     <view  class="titleone">输入联系方式</view>
-    <input type=''></input>
+    <input class='phone' type='number'></input>
 
     <view class="titleone">交货方式</view>
 
-    <view class="buytitle">交易地点</view>
-        <view class="weui-cell weui-cell_input">
-          <view class="cell__bd">
-            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-              <view class="weui-input">{{array[index]}}</view>
-            </picker>
-          </view>
+    <view class='contanttwo'>
+        <view class="buytitle">交易地点</view>
+            <view class="cell__bd">
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="weui-input">{{array[index]}}</view>
+              </picker>
+            </view>
+
+        <view class="buytitle">交易时间</view>
+            <view class="cell__bd">
+              <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+                <view class="weui-input">{{time}}</view>
+              </picker>
+            </view>
+        
+        <view class="buytitle">交易日期</view>
+            <view class="cell__bd">
+              <picker mode="date" value="{{date}}" start="2017-11-09" end="2020-09-01" bindchange="bindDateChange">
+                <view class="weui-input">{{date}}</view>
+              </picker>
+            </view>
+
       </view>
 
-      <view class="buytitle">交易时间</view>
-        <view class="weui-cell weui-cell_input">
-          <view class="cell__bd">
-            <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-              <view class="weui-input">{{time}}</view>
-            </picker>
-          </view>
-      </view>
-
-      <view class="buytitle">交易日期</view>
-        <view class="weui-cell weui-cell_input">
-          <view class="cell__bd">
-            <picker mode="date" value="{{date}}" start="2017-11-09" end="2020-09-01" bindchange="bindDateChange">
-              <view class="weui-input">{{date}}</view>
-            </picker>
-          </view>
-      </view>
+  </view>
 
     <view class="titleone">选择付款方式</view>
         <radio-group name="radio">
           <label bindtap='cash'><radio value="false" />线下现金交易</label>
           <label bindtap='netpay'><radio value="true" />网上pay交易</label>
         </radio-group>
-  </view>
 
-  <view class="{{showView?'page_body_show':'page_body_hide'}}">
+  <view class="pay {{showView?'page_body_show':'page_body_hide'}}">
     <view class="page-section">
-      <view class='titleone'>支付金额</view>
+      <view class='titlehidden'>支付金额</view>
       <view class="price">￥45.00</view>
-      <view class="desc">示例就没有后台服务啦，就当支付成功了吧</view>
+      <view class="desc">示例就没有后台服务啦，就当作支付成功了吧</view>
       <view class="btn-area">
-        <button type="primary" bindtap="payforme" loading="{{loading}}">支付</button>
+        <button type="primary"  formType="submit" bindtap="payforme" loading="{{loading}}">支付</button>
+      </view>
+    </view>
+  </view>
+    <view class="pay {{showView2?'page_body2_show':'page_body2_hide'}}">
+    <view class="page-section">
+      <view class='titlehidden'>现金支付</view>
+      <view class="price">￥45.00</view>
+      <view class="desc">提交订单后带上现金，按照约定的时间py交易吧</view>
+      <view class="btn-area">
+        <button type="primary" bindtap="submit" loading="{{loading}}">提交订单</button>
       </view>
     </view>
   </view>

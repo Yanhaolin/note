@@ -1,9 +1,9 @@
 Page({
   data: {
     imgUrls: [
-      '../../img/top1.png',
-      '../../img/top2.png',
-      '../../img/top3.png',
+      '../../img/top1.jpg',
+      '../../img/top2.jpg',
+      '../../img/top3.jpg',
     ],
     indicatorDots: true,
     autoplay: true,
@@ -53,6 +53,13 @@ Page({
   durationChange: function (e) {
     this.setData({
       duration: e.detail.value
+    })
+  },
+  search: function(){
+    wx.showToast({
+      title: '请求失败',
+      image: '../../img/cry.png',
+      duration: 1000
     })
   }
 })

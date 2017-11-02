@@ -1,2 +1,6 @@
 <!--pages/mysell/mysell.wxml-->
-<text>pages/mysell/mysell.wxml</text>
+<view class='contant'>
+  <icon type="info" size='200'></icon>
+  <text>\n这只是个示例没有相关数据</text>
+  <button type='primary' bindtap='back'>返回首页</button>
+</view>

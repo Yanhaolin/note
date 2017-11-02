@@ -1,5 +1,16 @@
 <!--pages/about/about.wxml-->
 <view class='container'>
+
+  <view class='appinfo'>
+    <image src='../../img/logo.jpg' id='logo'></image>
+    <text id='name'>广师二手书店</text>
+    <text id='motto'>广师二手书店，一个分享书籍，交流心得的与线下互动的交流平台\n\n程序员：严浩林、李嘉伟、谭洁梅</text>
+    <text id='paydesc'>程序员很幸苦，觉得不错的小伙伴可以给我投食~ o(*￣▽￣*)ブ</text>
+  </view>
+
+  <view class='codecontainer'>
   <image src='../../img/payforme.jpg' class='code'>微信</image>
   <image src='../../img/paytome.jpg' class='code'>支付宝</image>
+  </view>
+
 </view>

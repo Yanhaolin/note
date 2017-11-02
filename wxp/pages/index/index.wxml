@@ -1,4 +1,10 @@
 <view class="container">
+<view class='search'>
+  <view class='searchinner'>
+      <image src='../../img/search.png' class='searchimg' bindtap='search'></image>
+      <input class='searchinput' placeholder='搜索一下书城' placeholder-class='placeholder'></input>
+  </view>
+</view>
 
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -12,32 +18,32 @@
     <view class="icon">
     <view class="item">
       <view>
-        <navigator url="../logs/logs" open-type="redirect" >
-        <image src="../../img/1.png" style="width:50px;height:50px;"></image>
+        <navigator url="../mysell/mysell" open-type="redirect" >
+        <image src="../../img/1.jpg" class='topicon'></image>
         </navigator>
       </view>
       <view class="menu">二手好物</view>
     </view>
     <view class="item">
       <view>
-        <navigator url="../logs/logs" open-type="redirect">
-        <image src="../../img/2.png" style="width:50px;height:50px;"></image>
+        <navigator url="../mysell/mysell" open-type="redirect">
+        <image src="../../img/2.jpg" class='topicon'></image>
         </navigator>
       </view>
       <view class="menu">全新交易</view>
     </view>
     <view class="item">
       <view>
-        <navigator url="../logs/logs" open-type="redirect">
-        <image src="../../img/3.png" style="width:50px;height:50px;"></image>
+        <navigator url="../mysell/mysell" open-type="redirect">
+        <image src="../../img/3.jpg" class='topicon'></image>
         </navigator>
       </view>
       <view class="menu">新鲜上架</view>
     </view>
     <view class="item">
       <view>
-        <navigator url="../logs/logs" open-type="redirect">
-        <image src="../../img/4.png" style="width:50px;height:50px;"></image>
+        <navigator url="../mysell/mysell" open-type="redirect">
+        <image src="../../img/4.jpg" class='topicon'></image>
         </navigator>
       </view>
       <view class="menu">免费赠送</view>
@@ -51,7 +57,7 @@
             <view><image src='../../img/ccna.jpg'  class='bookimg'></image></view>
         </view>
         <view class='listright'>
-            <view class='booktitle'><text class='title'>CCNA学习实验指南</text></view>
+            <view class='booktitle'><text class='title'>CCNA实验指南</text></view>
             <view class='desc1'><text class='desc'>[美]cisco/人民邮电出版社</text></view>
             <view class='desc desc2'><text class='desc'>“九成新未开分无笔记”</text></view>
             <view class='money'><text class='price'>￥35.00</text> </view>

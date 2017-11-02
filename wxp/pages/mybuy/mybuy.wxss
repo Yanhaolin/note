@@ -1,1 +1,53 @@
 /* pages/mybuy/mybuy.wxss */
+.topview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2px solid;
+  margin-bottom: 10px;
+}
+.top {
+  width: 50%;
+  text-align: center;
+}
+.top-after {
+  color: #0099CC;
+}
+.things {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  align-items: center;
+  width: 95%;
+}
+.listleft {
+  width: 40%;
+}
+.listright {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.bookimg {
+  width: 100px;
+  height: 150px;
+}
+.title {
+  font-size: 24px;
+  border-bottom: 2px solid #ccc;
+}
+
+.page_body_hide {
+  display: none;
+}
+.page_body_show {
+  display: flex;
+}

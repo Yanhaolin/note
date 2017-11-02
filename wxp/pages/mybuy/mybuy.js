@@ -5,9 +5,32 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    showView: true,
+    list: [{
+      title: '解忧杂货店',
+      desc1: '[日]东野圭吾/南海出版社',
+      desc2: '数量:1',
+      img: '../../img/jyzhd.jpg',
+    }, {
+      title: 'CCNA实验指南',
+      desc1: '[美]cisco/人民邮电出版社',
+      desc2: '数量:1',
+      img: '../../img/ccna.jpg',
+    },
+    ]
   },
-
+  selectone: function () {
+    var that = this;
+    that.setData({
+      showView: (that.data.showView = false),
+    })
+  },
+  selecttwo: function () {
+    var that = this;
+    that.setData({
+      showView: (that.data.showView = true),
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
