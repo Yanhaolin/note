@@ -1,18 +1,4 @@
 /* pages/mybuy/mybuy.wxss */
-.topview {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: 2px solid;
-  margin-bottom: 10px;
-}
-.top {
-  width: 50%;
-  text-align: center;
-}
-.top-after {
-  color: #0099CC;
-}
 .things {
   display: flex;
   flex-direction: column;
@@ -45,9 +31,3 @@
   border-bottom: 2px solid #ccc;
 }
 
-.page_body_hide {
-  display: none;
-}
-.page_body_show {
-  display: flex;
-}

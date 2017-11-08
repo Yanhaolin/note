@@ -25,14 +25,14 @@ Page({
       maintxt: '12345678'
     },{
       txt: '卖家留言',
-      maintxt: '想要这本书'
+      maintxt: '想要这本书的请和我联系吧~'
     }]
   },
 /** 自己写的垃圾没有存储功能的留言功能hiahiahia */
   liuyan: function (e) {
   if (x){
     if (name){
-      extraLine.push('第' + y + '位用户-(' + name + ')说:' + x)
+      extraLine.push('第' + y + '楼用户-(' + name + ')说:' + x)
       this.setData({
         text: initData + extraLine.join('\n')
       })

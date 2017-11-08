@@ -10,7 +10,9 @@
     "pages/mysell/mysell",
     "pages/mybuy/mybuy",
     "pages/payforme/payforme",
-    "pages/chat/chat"
+    "pages/chat/chat",
+    "pages/car/car",
+    "pages/chatroom/chatroom"
   ],
   "window": {
     "backgroundTextStyle": "blcak",
@@ -27,7 +29,7 @@
         "selectedIconPath": "img/图书.png"
       },
       {
-        "pagePath": "pages/chat/chat",
+        "pagePath": "pages/chatroom/chatroom",
         "text": "聊天室",
         "iconPath": "img/社交.png",
         "selectedIconPath": "img/社交.png"

@@ -1,14 +1,9 @@
 <!--pages/mybuy/mybuy.wxml-->
 <view class='contant'>
 
-  <view class='topview'>
-      <view class='top' bindtap='selectone' hover-class='top-after'>待交易结束</view>
-      <view class='top' bindtap='selecttwo' hover-class='top-after'>全部订单</view>
-  </view>
-
   <view class='things'>
 
-    <view class="list {{showView?'page_body_show':'page_body_hide'}}" wx:for="{{list}}" wx:if="{{true}}" >
+    <view class="list" wx:for="{{list}}" wx:if="{{true}}" >
         <view class='listleft'>
             <view><image src='{{item.img}}'  class='bookimg'></image></view>
         </view>

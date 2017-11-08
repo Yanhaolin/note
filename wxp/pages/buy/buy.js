@@ -65,7 +65,7 @@ Page({
       success: function (res) {
         if (res.confirm) {
           wx.navigateTo({
-            url: '../mybuy/mybuy',
+            url: '../car/car',
           })
           console.log('用户点击确定')
         } else if (res.cancel) {

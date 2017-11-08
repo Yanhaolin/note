@@ -19,7 +19,7 @@ Page({
     },{
       name: '我的订单',
       src: '../../img/cart.png',
-      url: '../mybuy/mybuy'
+      url: '../car/car'
     },{
       name: '关于二手书店',
       src: '../../img/ViewGallery.png',
