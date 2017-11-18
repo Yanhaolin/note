@@ -9,8 +9,8 @@
   </view>
 
   <view class='codecontainer'>
-  <image src='../../img/payforme.jpg' class='code'>微信</image>
-  <image src='../../img/paytome.jpg' class='code'>支付宝</image>
+    <image src='../../img/payforme.jpg' class='code'>微信</image>
+    <image src='../../img/paytome.jpg' class='code'>支付宝</image>
   </view>
 
 </view>

@@ -1,25 +1,24 @@
 <view class="container">
-<view class='search'>
-  <view class='searchinner'>
+  <view class='search'>
+    <view class='searchinner'>
       <image src='../../img/search.png' class='searchimg' bindtap='search'></image>
       <input class='searchinput' placeholder='搜索一下书城' placeholder-class='placeholder'></input>
+    </view>
   </view>
-</view>
 
-<swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
-    <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355"/>
-    </swiper-item>
-  </block>
-</swiper>
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="355" />
+      </swiper-item>
+    </block>
+  </swiper>
 
-    <view class="icon">
+  <view class="icon">
     <view class="item">
       <view>
-        <navigator url="../mysell/mysell" open-type="redirect" >
-        <image src="../../img/1.jpg" class='topicon'></image>
+        <navigator url="../mysell/mysell" open-type="redirect">
+          <image src="../../img/1.jpg" class='topicon'></image>
         </navigator>
       </view>
       <view class="menu">二手好物</view>
@@ -27,7 +26,7 @@
     <view class="item">
       <view>
         <navigator url="../mysell/mysell" open-type="redirect">
-        <image src="../../img/2.jpg" class='topicon'></image>
+          <image src="../../img/2.jpg" class='topicon'></image>
         </navigator>
       </view>
       <view class="menu">全新交易</view>
@@ -35,7 +34,7 @@
     <view class="item">
       <view>
         <navigator url="../mysell/mysell" open-type="redirect">
-        <image src="../../img/3.jpg" class='topicon'></image>
+          <image src="../../img/3.jpg" class='topicon'></image>
         </navigator>
       </view>
       <view class="menu">新鲜上架</view>
@@ -43,48 +42,72 @@
     <view class="item">
       <view>
         <navigator url="../mysell/mysell" open-type="redirect">
-        <image src="../../img/4.jpg" class='topicon'></image>
+          <image src="../../img/4.jpg" class='topicon'></image>
         </navigator>
       </view>
       <view class="menu">免费赠送</view>
     </view>
-    </view>   
+  </view>
 
-    <view class='main'>
-        <view class='hr'>
-        <view class='banner'><image src='../../img/line.png' class='shuxian'></image></view>
-        <view><text>热门书籍</text></view>
-         </view>
-      <view class='list'>
-      <navigator class='nav' url='../detail/detail' hover-class="none">
-        <view class='listleft'>
-            <view><image src='../../img/ccna.jpg'  class='bookimg'></image></view>
-        </view>
-        <view class='listright'>
-            <view class='booktitle'><text class='title'>CCNA实验指南</text></view>
-            <view class='desc1'><text class='desc'>[美]cisco/人民邮电出版社</text></view>
-            <view class='desc desc2'><text class='desc'>“九成新未开分无笔记”</text></view>
-            <view class='money'><text class='price'>￥35.00</text> </view>
-            <view class='booksite'><text class='desc'>校本部6栋501宿舍XXX</text> </view>
-        </view>
-        </navigator>
+  <view class='main'>
+    <view class='hr'>
+      <view class='banner'>
+        <image src='../../img/line.png' class='shuxian'></image>
       </view>
-
-
-      <view class='list' wx:for="{{list}}" wx:if="{{true}}">
-           <navigator class='nav' url='../detail/detail' hover-class="none">
-        <view class='listleft'>
-            <view><image src='../../img/jyzhd.jpg'  class='bookimg'></image></view>
-        </view>
-        <view class='listright'>
-            <view class='booktitle'><text class='title'>{{item.title}}</text></view>
-            <view class='desc1'><text class='desc'>{{item.desc1}}</text></view>
-            <view class='desc2'><text class='desc'>{{item.desc2}}</text></view>
-            <view class='money'><text class='price'>{{item.price}}</text> </view>
-            <view class='booksite'><text class='desc'>{{item.desc}}</text> </view>
-        </view>
-        </navigator>
+      <view>
+        <text>热门书籍</text>
       </view>
     </view>
+    <view class='list'>
+      <navigator class='nav' url='../detail/detail' hover-class="none">
+        <view class='listleft'>
+          <view>
+            <image src='../../img/ccna.jpg' class='bookimg'></image>
+          </view>
+        </view>
+        <view class='listright'>
+          <view class='booktitle'>
+            <text class='title'>CCNA实验指南</text>
+          </view>
+          <view class='desc1'>
+            <text class='desc'>[美]cisco/人民邮电出版社</text>
+          </view>
+          <view class='desc desc2'>
+            <text class='desc'>“九成新未开分无笔记”</text>
+          </view>
+          <view class='money'>
+            <text class='price'>￥35.00</text> </view>
+          <view class='booksite'>
+            <text class='desc'>校本部6栋501宿舍XXX</text> </view>
+        </view>
+      </navigator>
+    </view>
+
+
+    <view class='list' wx:for="{{list}}" wx:if="{{true}}">
+      <navigator class='nav' url='../detail/detail' hover-class="none">
+        <view class='listleft'>
+          <view>
+            <image src='../../img/jyzhd.jpg' class='bookimg'></image>
+          </view>
+        </view>
+        <view class='listright'>
+          <view class='booktitle'>
+            <text class='title'>{{item.title}}</text>
+          </view>
+          <view class='desc1'>
+            <text class='desc'>{{item.desc1}}</text>
+          </view>
+          <view class='desc2'>
+            <text class='desc'>{{item.desc2}}</text>
+          </view>
+          <view class='money'>
+            <text class='price'>{{item.price}}</text> </view>
+          <view class='booksite'>
+            <text class='desc'>{{item.desc}}</text> </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
 
 </view>

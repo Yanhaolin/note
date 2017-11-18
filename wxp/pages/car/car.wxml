@@ -1,30 +1,44 @@
 <view class="bg">
-   <view class="nav">
-       <view class="headsw">
-          <view><view class="{{flag==0?'select':'normal'}}" id="0" bindtap="switchNav">正在进行</view></view>
-          <view><view class="{{flag==1?'select':'normal'}}" id="1" bindtap="switchNav">完成订单</view></view>
-          <view><view class="{{flag==2?'select':'normal'}}" id="2" bindtap="switchNav">全部订单</view></view>
-       </view>
-   </view>
+  <view class="nav">
+    <view class="headsw">
+      <view>
+        <view class="{{flag==0?'select':'normal'}}" id="0" bindtap="switchNav">正在进行</view>
+      </view>
+      <view>
+        <view class="{{flag==1?'select':'normal'}}" id="1" bindtap="switchNav">完成订单</view>
+      </view>
+      <view>
+        <view class="{{flag==2?'select':'normal'}}" id="2" bindtap="switchNav">全部订单</view>
+      </view>
+    </view>
+  </view>
 </view>
 
 <swiper current="{{currentTab}}" style="height: 700px;">
   <swiper-item>
-      <include src="../mybuy/mybuy.wxml"/>
+    <include src="../mybuy/mybuy.wxml" />
   </swiper-item>
   <swiper-item>
-      <include src="../mysell/mysell.wxml"/>
+    <include src="../mysell/mysell.wxml" />
   </swiper-item>
   <swiper-item>
-    <view class="list" wx:for="{{list}}" wx:if="{{true}}" >
-        <view class='listleft'>
-            <view><image src='{{item.img}}'  class='bookimg'></image></view>
+    <view class="list" wx:for="{{list}}" wx:if="{{true}}">
+      <view class='listleft'>
+        <view>
+          <image src='{{item.img}}' class='bookimg'></image>
         </view>
-        <view class='listright'>
-            <view class='booktitle'><text class='title'>{{item.title}}</text></view>
-            <view class='desc1'><text class='desc'>{{item.desc1}}</text></view>
-            <view class='desc2'><text class='desc'>\n{{item.desc2}}</text></view>
+      </view>
+      <view class='listright'>
+        <view class='booktitle'>
+          <text class='title'>{{item.title}}</text>
         </view>
+        <view class='desc1'>
+          <text class='desc'>{{item.desc1}}</text>
+        </view>
+        <view class='desc2'>
+          <text class='desc'>\n{{item.desc2}}</text>
+        </view>
+      </view>
     </view>
   </swiper-item>
 </swiper>

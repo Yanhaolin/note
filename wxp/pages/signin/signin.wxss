@@ -1,13 +1,14 @@
 /* pages/signin/signin.wxss */
+
 page {
-  background-color: #0099ff;
+  background-color: #09f;
 }
 
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .userinfo-avatar {
@@ -22,7 +23,7 @@ page {
 }
 
 .container {
-  background: #0099ff;
+  background: #09f;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -40,16 +41,17 @@ page {
 }
 
 .more {
- width:30px;
- height:30px;
- align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
 }
+
 .icon {
   width: 30px;
   height: 30px;
 }
 
-.linetxt{
+.linetxt {
   padding-top: 3px;
 }
 
@@ -57,7 +59,6 @@ page {
 }
 
 .lineright {
-
 }
 
 .nav {
